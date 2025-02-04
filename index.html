@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
     </header>
@@ -18,33 +16,28 @@
         <p>¿Nos conectamos?</p>
     </section>
 
-    <section class="social-grid">
+    <section class="social-grid" data-url="https://www.instagram.com/ridiazperfumeria/profilecard/?igsh=MTBrY3FyajQwdWxldg%3D%3D">
         <div class="social-card instagram">
-            <a href="https://www.instagram.com/ridiazperfumeria" class="social-card instagram" target="_blank">
-                <img src="./instagram.svg" width="50">
-                <p>@ridiazperfumeria</p>
-                <p></p>
-                <p>Síguenos en Instagram →</p>
+            <img src="./instagram.svg" width="60">
+            <p>@ridiazperfumeria</p>
+            <p></p>
+            <p>Síguenos en Instagram →</p>
         </div>
-
-        <div class="social-card facebook">
-            <a href="https://www.facebook.com/ridiazperfumeria" class="social-card facebook" target="_blank">
-                <img src="./icons8-facebook.svg" width="50">
-                <p>@Ridiaz Perfumeria</p>
-                <p>Síguenos en Facebook →</p>
+        
+        <div class="social-card facebook" data-url="https://www.facebook.com/ridiazperfumeria">
+            <img src="./icons8-facebook.svg" width="60">
+            <p>@Ridiaz Perfumeria</p>
+            <p>Síguenos en Facebook →</p>
         </div>
-        <div class="social-card tiktok">
-            <a href="https://www.tiktok.com/@ridiazperfumes?_t=ZN-8tde1rpfcve&_r=1" class="social-card tiktok"
-                target="_blank">
-                <img src="./icons8-tik-tok (1).svg" width="50">
-                <p class="text-tiktok">Ridiazperfumes</p>
-                <p>Síguenos en TikTok →</p>
+        <div class="social-card tiktok" data-url="https://www.tiktok.com/@ridiazperfumes?_t=ZN-8tde1rpfcve&_r=1">
+            <img src="./icons8-tik-tok (1).svg" width="60">
+            <p class="text-tiktok">Ridiazperfumes</p>
+            <p>Síguenos en TikTok →</p>
         </div>
-
-        <div class="social-card whatsapp">
-            <a href="https://wa.link/2zy27c" class="social-card whatsapp" target="_blank">
-                <img src="./whatsapp.svg" width="50">
-                <p>Escríbenos al whatsapp →</p>
+        
+        <div class="social-card whatsapp" data-url="https://wa.link/2zy27c">
+            <img src="./whatsapp.svg" width="60" >
+            <p>Escríbenos al whatsapp →</p>
         </div>
     </section>
 
@@ -63,6 +56,16 @@
         </div>
     </footer>
 
+    <script>
+        document.querySelectorAll('.social-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    </script>
+    
 </body>
-
 </html>
