@@ -1,0 +1,123 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro para mayor contraste */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.top-bar {
+    font-size: 12px;
+    color: gray;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.social-card {
+    padding: 20px;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+.text-tiktok{
+    text-decoration: #000000;
+    text-decoration-color: #000;
+}
+
+.instagram { background: #e4405f; }
+.tiktok { background: #010101ae; ; }
+.facebook { background: #1877f2; }
+.whatsapp { background: #25d366; }
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.social-links a, .footer-links a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+.logo-esquina {
+    position: fixed;
+    top: -35px;
+    left: -40px;
+    width: 180px; /* Ajusta el tamaño */
+    height: auto;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+footer {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-footer {
+    width: 230px; /* Tamaño del logo en el footer */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+/* Media Queries para iPhone 12 en adelante */
+@media screen and (min-width: 390px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Queries para Samsung S22 en adelante */
+@media screen and (min-width: 412px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Queries para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    .social-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
