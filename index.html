@@ -38,6 +38,14 @@
             <img src="./whatsapp.svg" width="60" >
             <p>Escríbenos al whatsapp →</p>
         </div>
+        <div class="social-card catalogo" onclick="descargarYAbrirPDF()">
+            <img src="./document.png" width="60">
+            <p>Catálogo Perfumería →</p>
+        </div>
+        <div class="social-card tienda">
+            <img src="./store (1).png" width="60">
+            <p>Tienda Online - Proximamente →</p>
+        </div>
     </section>
 
     <footer>
@@ -65,6 +73,18 @@
             });
         });
     </script>
+    <script>
+        function descargarYAbrirPDF() {
+            const pdfURL = 'https://drive.google.com/file/d/1MHepMch3eY3G2ulaI6ReznbNaOHAgacX/view?usp=drive_link'; // Reemplaza con la URL real del PDF
+        
+            
+        
+            // Abrir el PDF en una nueva pestaña
+            setTimeout(() => {
+                window.open(pdfURL, '_blank');
+            }, 500); // Pequeño retraso para asegurar que la descarga ocurra antes
+        }
+        </script>
     
 </body>
 </html>

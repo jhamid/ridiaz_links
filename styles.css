@@ -56,10 +56,14 @@ header {
     text-decoration-color: #000;
 }
 
-.instagram { background: #e4405f; }
+
+
+.instagram { background: #ea748a; }
 .tiktok { background: #010101ae; ; }
 .facebook { background: #1877f2; }
 .whatsapp { background: #25d366; }
+.tienda { background: #a0a5e4; }
+.catalogo { background: #25d366; }
 
 .image-card img {
     width: 100%;
